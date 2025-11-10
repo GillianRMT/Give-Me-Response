@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="./script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/668d3580b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>I need a response</title>
+  </head>
+  <body>
+    <div id="popup1" class="overlay">
+      <div class="popup popup-one">
+        <h2>Here is your insult:</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <p id="insult"></p>
+        </div>
+      </div>
+    </div>
+    <div id="popup2" class="overlay">
+      <div class="popup popup-two">
+        <h2>Here is your compliment:</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <p id="compliment"></p>
+        </div>
+      </div>
+    </div>
+    <div id="popup3" class="overlay">
+      <div class="popup popup-three">
+        <h2>Here is your bombshell:</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <p id="bombshell"></p>
+        </div>
+      </div>
+    </div>
+    <div class="heading" id="header">
+      <h1 class="heading-text">Welcome to my response page!</h1>
+      <p class="heading-text">
+        Do you have a friend that you need that perfect insult for? Do you have
+        a cute girl you just don't know how to compliment? Do need an answer
+        that you can use at any time that will make you sound brilliant to
+        everyone around you? Well, you have come to the right place! Just select
+        the correct category and leave the rest to me!
+      </p>
+    </div>
+    <div class="selections">
+      <div class="insult-selection selection">
+        <div class="icon"><i class="fa-regular fa-face-frown"></i></div>
+        <h4>Insult</h4>
+        <h6>Get a clever insult</h6>
+        <a
+          class="button"
+          id="insult-button"
+          onclick="insultFunction()"
+          href="#popup1"
+          >Generate</a
+        >
+      </div>
+      <div class="compliment-selection selection">
+        <div class="icon"><i class="fa-regular fa-heart"></i></div>
+        <h4>Compliment</h4>
+        <h6>Get a nice compliment</h6>
+        <a
+          class="button"
+          id="compliment-button"
+          href="#popup2"
+          onclick="complimentFunction()"
+          >Generate</a
+        >
+      </div>
+      <div class="bombshell-selection selection">
+        <div class="icon"><i class="fa-regular fa-lightbulb"></i></div>
+        <h4>Bombshell</h4>
+        <h6>Get a brilliant line</h6>
+        <a
+          class="button"
+          id="bombshell-button"
+          href="#popup3"
+          onclick="bombshellFunction()"
+          >Generate</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
